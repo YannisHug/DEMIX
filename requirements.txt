@@ -1,0 +1,10 @@
+openunmix
+librosa==0.11.0
+matplotlib==3.10.8
+mir_eval==0.8.2
+musdb==0.4.3
+museval==0.4.1
+numpy==2.4.2
+soundfile==0.13.1
+streamlit==1.54.0
+torch==2.10.0

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 120 1200 560" width="1200" height="560" font-family="'Georgia', 'Times New Roman', serif">
+
+  <rect x="0" y="120" width="1200" height="560" fill="#F8F9FA"/>
+  <defs>
+    <linearGradient id="enc1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#4A90D9"/><stop offset="100%" stop-color="#2E6DB4"/></linearGradient>
+    <linearGradient id="enc2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3A7FC1"/><stop offset="100%" stop-color="#1E5A9C"/></linearGradient>
+    <linearGradient id="enc3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2A6FA8"/><stop offset="100%" stop-color="#0E4A84"/></linearGradient>
+    <linearGradient id="enc4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1A5F95"/><stop offset="100%" stop-color="#003A6C"/></linearGradient>
+    <linearGradient id="bot"  x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#7B4FC9"/><stop offset="100%" stop-color="#5A2EA8"/></linearGradient>
+    <linearGradient id="dec4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E8834A"/><stop offset="100%" stop-color="#C5612A"/></linearGradient>
+    <linearGradient id="dec3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E8974A"/><stop offset="100%" stop-color="#C5752A"/></linearGradient>
+    <linearGradient id="dec2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E8AB4A"/><stop offset="100%" stop-color="#C5892A"/></linearGradient>
+    <linearGradient id="dec1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E8BF4A"/><stop offset="100%" stop-color="#C5A02A"/></linearGradient>
+    <linearGradient id="mask" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2ECC71"/><stop offset="100%" stop-color="#1A9E52"/></linearGradient>
+    <linearGradient id="inp"  x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#95A5A6"/><stop offset="100%" stop-color="#717D7E"/></linearGradient>
+    <marker id="arr"  markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#555"/></marker>
+    <marker id="arrs" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#27AE60"/></marker>
+    <marker id="arrg" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#717D7E"/></marker>
+    <filter id="sh"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00000030"/></filter>
+    <filter id="shs"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#00000045"/></filter>
+  </defs>
+
+  <!-- Background -->
+  
+
+  <!-- Title bar -->
+  
+  
+  
+  
+
+  <!-- Legend -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <!-- Section labels -->
+  
+  
+  
+  
+  
+  
+
+  <!-- ══ INPUT ══ -->
+  <rect x="30" y="310" width="52" height="260" rx="4" fill="url(#inp)" filter="url(#sh)"/>
+  <text x="56" y="302" text-anchor="middle" fill="#4A5568" font-size="9" font-family="'Courier New', monospace">2 × F × T</text>
+  <text transform="translate(56,440) rotate(-90)" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">Input STFT</text>
+  <text x="56" y="578" text-anchor="middle" fill="#718096" font-size="8" font-family="'Courier New', monospace">1025×259</text>
+  <line x1="83" y1="440" x2="96" y2="440" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ══ E1 ══ -->
+  <rect x="98" y="310" width="96" height="260" rx="5" fill="url(#enc1)" filter="url(#sh)"/>
+  <text x="146" y="302" text-anchor="middle" fill="#2E6DB4" font-size="9" font-family="'Courier New', monospace" font-weight="bold">16 filters</text>
+  <text transform="translate(146,548) rotate(-90)" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">E1</text>
+  <text x="146" y="578" text-anchor="middle" fill="#BEE3F8" font-size="8" font-family="'Courier New', monospace">513×130</text>
+  <rect x="106" y="320" width="80" height="15" rx="2" fill="#ffffff25"/>
+  <text x="146" y="330.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">Conv2D (5×5)</text>
+  <rect x="106" y="338" width="80" height="15" rx="2" fill="#ffffff25"/>
+  <text x="146" y="348.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">BatchNorm2D</text>
+  <rect x="106" y="356" width="80" height="15" rx="2" fill="#ffffff25"/>
+  <text x="146" y="366.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">LeakyReLU</text>
+  <rect x="106" y="374" width="80" height="15" rx="2" fill="#ffffff18"/>
+  <text x="146" y="384.5" text-anchor="middle" fill="#D6EAF8" font-size="7.5" font-family="'Courier New', monospace">stride (2,2)</text>
+  <line x1="195" y1="440" x2="208" y2="440" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ══ E2 ══ -->
+  <rect x="210" y="362" width="96" height="156" rx="5" fill="url(#enc2)" filter="url(#sh)"/>
+  <text x="258" y="354" text-anchor="middle" fill="#2E6DB4" font-size="9" font-family="'Courier New', monospace" font-weight="bold">32 filters</text>
+  <text transform="translate(258,500) rotate(-90)" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">E2</text>
+  <text x="258" y="527" text-anchor="middle" fill="#BEE3F8" font-size="8" font-family="'Courier New', monospace">257×65</text>
+  <rect x="218" y="372" width="80" height="15" rx="2" fill="#ffffff25"/>
+  <text x="258" y="382.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">Conv2D (5×5)</text>
+  <rect x="218" y="391" width="80" height="15" rx="2" fill="#ffffff25"/>
+  <text x="258" y="401.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">BatchNorm2D</text>
+  <rect x="218" y="410" width="80" height="15" rx="2" fill="#ffffff25"/>
+  <text x="258" y="420.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">LeakyReLU</text>
+  <rect x="218" y="429" width="80" height="15" rx="2" fill="#ffffff18"/>
+  <text x="258" y="439.5" text-anchor="middle" fill="#D6EAF8" font-size="7.5" font-family="'Courier New', monospace">stride (2,2)</text>
+  <line x1="307" y1="440" x2="320" y2="440" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ══ E3 ══ -->
+  <rect x="322" y="392" width="96" height="96" rx="5" fill="url(#enc3)" filter="url(#sh)"/>
+  <text x="370" y="384" text-anchor="middle" fill="#1A5F95" font-size="9" font-family="'Courier New', monospace" font-weight="bold">64 filters</text>
+  <text transform="translate(370,472) rotate(-90)" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">E3</text>
+  <text x="370" y="498" text-anchor="middle" fill="#AED6F1" font-size="8" font-family="'Courier New', monospace">129×33</text>
+  <rect x="330" y="400" width="80" height="14" rx="2" fill="#ffffff25"/>
+  <text x="370" y="409.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">Conv2D (5×5)</text>
+  <rect x="330" y="417" width="80" height="14" rx="2" fill="#ffffff25"/>
+  <text x="370" y="426.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">BatchNorm2D</text>
+  <rect x="330" y="434" width="80" height="14" rx="2" fill="#ffffff25"/>
+  <text x="370" y="443.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">LeakyReLU</text>
+  <rect x="330" y="451" width="80" height="14" rx="2" fill="#ffffff18"/>
+  <text x="370" y="460.5" text-anchor="middle" fill="#AED6F1" font-size="7.5" font-family="'Courier New', monospace">stride (2,2)</text>
+  <line x1="419" y1="440" x2="432" y2="440" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ══ E4 ══ -->
+  <rect x="434" y="410" width="96" height="60" rx="5" fill="url(#enc4)" filter="url(#sh)"/>
+  <text x="482" y="402" text-anchor="middle" fill="#003A6C" font-size="9" font-family="'Courier New', monospace" font-weight="bold">128 filters</text>
+  <text transform="translate(482,458) rotate(-90)" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">E4</text>
+  <text x="482" y="480" text-anchor="middle" fill="#85C1E9" font-size="8" font-family="'Courier New', monospace">65×17</text>
+  <rect x="442" y="416" width="80" height="12" rx="2" fill="#ffffff25"/>
+  <text x="482" y="424.5" text-anchor="middle" fill="#fff" font-size="7" font-family="'Courier New', monospace">Conv2D (5×5)</text>
+  <rect x="442" y="431" width="80" height="12" rx="2" fill="#ffffff25"/>
+  <text x="482" y="439.5" text-anchor="middle" fill="#fff" font-size="7" font-family="'Courier New', monospace">BatchNorm · ReLU</text>
+  <line x1="531" y1="440" x2="544" y2="440" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ══ BOTTLENECK ══ -->
+  <rect x="546" y="419" width="108" height="42" rx="6" fill="url(#bot)" filter="url(#shs)"/>
+  <text x="600" y="436" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">Bottleneck</text>
+  <text x="600" y="449" text-anchor="middle" fill="#D7BDE2" font-size="7.5" font-family="'Courier New', monospace">Conv2D · BN · ReLU</text>
+  <text x="600" y="411" text-anchor="middle" fill="#5A2EA8" font-size="9" font-family="'Courier New', monospace" font-weight="bold">128 filters</text>
+  <text x="600" y="471" text-anchor="middle" fill="#9B59B6" font-size="8" font-family="'Courier New', monospace">65×17</text>
+  <line x1="655" y1="440" x2="668" y2="440" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ══ D4 ══ -->
+  <rect x="670" y="410" width="96" height="60" rx="5" fill="url(#dec4)" filter="url(#sh)"/>
+  <text x="718" y="402" text-anchor="middle" fill="#C5612A" font-size="9" font-family="'Courier New', monospace" font-weight="bold">128 filters</text>
+  <text transform="translate(718,458) rotate(-90)" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">D4</text>
+  <text x="718" y="480" text-anchor="middle" fill="#FDEBD0" font-size="8" font-family="'Courier New', monospace">65×17</text>
+  <rect x="678" y="416" width="80" height="12" rx="2" fill="#ffffff25"/>
+  <text x="718" y="424.5" text-anchor="middle" fill="#fff" font-size="7" font-family="'Courier New', monospace">ConvT2D (5×5)</text>
+  <rect x="678" y="431" width="80" height="12" rx="2" fill="#ffffff25"/>
+  <text x="718" y="439.5" text-anchor="middle" fill="#fff" font-size="7" font-family="'Courier New', monospace">BN · ReLU · Drop</text>
+  <line x1="767" y1="440" x2="780" y2="440" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ══ D3 ══ -->
+  <rect x="782" y="392" width="96" height="96" rx="5" fill="url(#dec3)" filter="url(#sh)"/>
+  <text x="830" y="384" text-anchor="middle" fill="#C5752A" font-size="9" font-family="'Courier New', monospace" font-weight="bold">64 filters</text>
+  <text transform="translate(830,472) rotate(-90)" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">D3</text>
+  <text x="830" y="498" text-anchor="middle" fill="#FDEBD0" font-size="8" font-family="'Courier New', monospace">129×33</text>
+  <rect x="790" y="400" width="80" height="14" rx="2" fill="#ffffff25"/>
+  <text x="830" y="409.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">ConvT2D (5×5)</text>
+  <rect x="790" y="417" width="80" height="14" rx="2" fill="#ffffff25"/>
+  <text x="830" y="426.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">BatchNorm2D</text>
+  <rect x="790" y="434" width="80" height="14" rx="2" fill="#ffffff25"/>
+  <text x="830" y="443.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">ReLU + Dropout</text>
+  <line x1="879" y1="440" x2="892" y2="440" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ══ D2 ══ -->
+  <rect x="894" y="362" width="96" height="156" rx="5" fill="url(#dec2)" filter="url(#sh)"/>
+  <text x="942" y="354" text-anchor="middle" fill="#C5892A" font-size="9" font-family="'Courier New', monospace" font-weight="bold">32 filters</text>
+  <text transform="translate(942,500) rotate(-90)" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">D2</text>
+  <text x="942" y="527" text-anchor="middle" fill="#FDEBD0" font-size="8" font-family="'Courier New', monospace">257×65</text>
+  <rect x="902" y="372" width="80" height="15" rx="2" fill="#ffffff25"/>
+  <text x="942" y="382.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">ConvT2D (5×5)</text>
+  <rect x="902" y="391" width="80" height="15" rx="2" fill="#ffffff25"/>
+  <text x="942" y="401.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">BatchNorm2D</text>
+  <rect x="902" y="410" width="80" height="15" rx="2" fill="#ffffff25"/>
+  <text x="942" y="420.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">ReLU</text>
+  <line x1="991" y1="440" x2="1004" y2="440" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ══ D1 ══ -->
+  <rect x="1006" y="310" width="96" height="260" rx="5" fill="url(#dec1)" filter="url(#sh)"/>
+  <text x="1054" y="302" text-anchor="middle" fill="#C5A02A" font-size="9" font-family="'Courier New', monospace" font-weight="bold">16 filters</text>
+  <text transform="translate(1054,548) rotate(-90)" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">D1</text>
+  <text x="1054" y="578" text-anchor="middle" fill="#FEF9E7" font-size="8" font-family="'Courier New', monospace">513×130</text>
+  <rect x="1014" y="320" width="80" height="15" rx="2" fill="#ffffff25"/>
+  <text x="1054" y="330.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">ConvT2D (5×5)</text>
+  <rect x="1014" y="339" width="80" height="15" rx="2" fill="#ffffff25"/>
+  <text x="1054" y="349.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">BatchNorm2D</text>
+  <rect x="1014" y="358" width="80" height="15" rx="2" fill="#ffffff25"/>
+  <text x="1054" y="368.5" text-anchor="middle" fill="#fff" font-size="7.5" font-family="'Courier New', monospace">ReLU</text>
+  <line x1="1103" y1="440" x2="1116" y2="440" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ══ SIGMOID MASK ══ -->
+  <rect x="1118" y="310" width="52" height="260" rx="4" fill="url(#mask)" filter="url(#sh)"/>
+  <text x="1144" y="302" text-anchor="middle" fill="#1A9E52" font-size="9" font-family="'Courier New', monospace">mask M</text>
+  <text transform="translate(1144,450) rotate(-90)" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">Sigmoid &#963;</text>
+  <text x="1144" y="578" text-anchor="middle" fill="#D5F5E3" font-size="8" font-family="'Courier New', monospace">1025×259</text>
+
+  <!-- ══ SKIP CONNECTIONS (arcs au-dessus) ══ -->
+  <!-- Skip 1 : E1 → D1 -->
+  <path d="M 146 308 C 146 236, 1054 236, 1054 308" fill="none" stroke="#27AE60" stroke-width="1.8" stroke-dasharray="6,3" marker-end="url(#arrs)"/>
+  <text x="600" y="231" text-anchor="middle" fill="#1E8449" font-size="8.5" font-family="'Courier New', monospace">skip 1 · 16 ch</text>
+
+  <!-- Skip 2 : E2 → D2 -->
+  <path d="M 258 360 C 258 278, 942 278, 942 360" fill="none" stroke="#27AE60" stroke-width="1.8" stroke-dasharray="6,3" marker-end="url(#arrs)"/>
+  <text x="600" y="273" text-anchor="middle" fill="#1E8449" font-size="8.5" font-family="'Courier New', monospace">skip 2 · 32 ch</text>
+
+  <!-- Skip 3 : E3 → D3 -->
+  <path d="M 370 390 C 370 326, 830 326, 830 390" fill="none" stroke="#27AE60" stroke-width="1.8" stroke-dasharray="6,3" marker-end="url(#arrs)"/>
+  <text x="600" y="321" text-anchor="middle" fill="#1E8449" font-size="8.5" font-family="'Courier New', monospace">skip 3 · 64 ch</text>
+
+  <!-- Skip 4 : E4 → D4 -->
+  <path d="M 482 408 C 482 370, 718 370, 718 408" fill="none" stroke="#27AE60" stroke-width="1.8" stroke-dasharray="6,3" marker-end="url(#arrs)"/>
+  <text x="600" y="365" text-anchor="middle" fill="#1E8449" font-size="8.5" font-family="'Courier New', monospace">skip 4 · 128 ch</text>
+
+  <!-- ══ MASK MULTIPLICATION ══ -->
+  <!-- Descente du masque -->
+  <line x1="1144" y1="572" x2="1144" y2="626" stroke="#1A9E52" stroke-width="1.5" marker-end="url(#arrs)"/>
+  <!-- Cercle multiplication -->
+  <circle cx="1144" cy="640" r="14" fill="#fff" stroke="#1A9E52" stroke-width="2"/>
+  <text x="1144" y="646" text-anchor="middle" fill="#1A9E52" font-size="17">&#10005;</text>
+  <!-- Chemin mix vers ⊗ -->
+  <path d="M 56 572 L 56 640 L 1128 640" fill="none" stroke="#95A5A6" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrg)"/>
+  <text x="580" y="656" text-anchor="middle" fill="#7F8C8D" font-size="8.5" font-family="'Courier New', monospace">Input STFT magnitude  (phase reused for ISTFT reconstruction)</text>
+  <!-- Output -->
+  <line x1="1159" y1="640" x2="1180" y2="640" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="1182" y="600" width="10" height="80" rx="2" fill="#E74C3C"/>
+  <text x="1196" y="628" fill="#C0392B" font-size="9" font-family="'Courier New', monospace" font-weight="bold">Estimated</text>
+  <text x="1196" y="641" fill="#C0392B" font-size="9" font-family="'Courier New', monospace" font-weight="bold">source S&#x302;</text>
+  <text x="1196" y="656" fill="#922B21" font-size="8" font-family="'Courier New', monospace">&#8594; ISTFT</text>
+  <text x="1196" y="669" fill="#922B21" font-size="8" font-family="'Courier New', monospace">&#8594; waveform</text>
+
+  <!-- ══ FOOTNOTES ══ -->
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  <!-- Bottom rule -->
+  
+  
+
+</svg>
